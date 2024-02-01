@@ -1,0 +1,76 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 13/11/2022
+* @Project: My-Portfolio
+* */
+
+body {
+    overflow: hidden;
+    background-color: black;
+}
+
+main>section {
+    width: 100vw;
+    height: 100vh;
+}
+
+main>section>img {
+    width: 100%;
+    height: 100%;
+}
+
+main>div {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-left: 500px;
+    margin-top: 30px;
+    background-color: #7700ff;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent,transparent,#0004);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+}
+
+main>div:nth-child(3){
+    font-family: 'Poppins', sans-serif;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    margin-left: 600px;
+    margin-top: 500px;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+main>div:nth-child(3):hover{
+    border: 3px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+#bgImg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+}

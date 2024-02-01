@@ -1,0 +1,78 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 06/11/2022
+* @Project: My-Portfolio
+* */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body>img {
+    width: 100%;
+    height: 100vh;
+}
+
+main>section {
+    width: 1000px;
+    height: 150px;
+    background-color: rgba(255,255,255,0.10);
+    box-shadow: 0px 5px 5px rgba(130, 127, 130, 0.83);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main>section>section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+}
+
+main>section>section>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+main>div:nth-child(2) {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+main>div:nth-child(2)>button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main>div:nth-child(2)>button:nth-child(1){
+    background-color: green;
+    border: none;
+}
+
+main>div:nth-child(2)>button:nth-child(2) {
+    background-color: red;
+    border: none;
+}

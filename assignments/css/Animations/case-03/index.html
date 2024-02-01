@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations Case 03</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        body {
+            background-color: #747474;
+        }
+        main {
+            width: 900px;
+            height: 450px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.76);
+            background-size: cover;
+            background-image: url("assets/1.jpg");
+            background-position: center;
+            overflow: hidden;
+        }
+
+        main>section {
+            width: 400%;
+            height: 100%;
+            display: flex;
+
+            animation-name: my-animation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes my-animation {
+            0%,20% {
+                transform: translateX(0);
+            }
+            30%,50% {
+                transform: translateX(-25%);
+            }
+            60%,80% {
+                transform: translateX(-50%);
+            }
+            90%, 100% {
+                transform: translateX(-75%);
+            }
+
+        }
+
+        main>section>div {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        main>section>div:nth-child(1) {
+            background: url("assets/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(2) {
+            background: url("assets/2.webp");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(3) {
+            background: url("assets/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>section>div:nth-child(4) {
+            background: url("assets/7.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

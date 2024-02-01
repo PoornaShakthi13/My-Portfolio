@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abhishek POS System Orders</title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/main-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #1C2E4C">
+<script src="../assets/js/bootstrap.js"></script>
+<script src="../assets/js/bootstrap.bundle.js"></script>
+
+<!--------------navbar------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.76);">
+    <div class="container-fluid">
+        <img src="../assets/img/my-logo.png" style="width: 150px; height: 50px">
+        <a class="navbar-brand" href="#" style="margin-top: 5px; margin-left: 5px; color: red; font-size: 2rem;">POS SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="btn btn-outline-danger ms-auto" type="submit"><i class="bi bi-box-arrow-right" style="margin-right: 10px"></i>Log out</button>
+        </div>
+    </div>
+</nav>
+<!--------------navbar------------->
+
+<!--------------slider------------->
+
+<div class="offcanvas offcanvas-start bg-dark text-white position-fixed" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" style="transform: none; width: 200px; top: 80px; visibility: visible !important; font-family: 'Michroma', sans-serif;">
+    <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <li>
+                    <div class="text-muted fw-bold px-lg-4" style="font-size: 2rem">Menu</div><br>
+                </li>
+                <li>
+                    <hr class="table-group-divider">
+                </li>
+                <li>
+                    <a href="../index.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-speedometer2"></i></span>
+                        <span style="font-size: 1.5rem;">Dash Board</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="../pages/Customer.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-people-fill"></i></span>
+                        <span style="font-size: 1.5rem;">Customers</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="../pages/Items.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-stack"></i></span>
+                        <span style="font-size: 1.5rem;">Items</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-cart4"></i></span>
+                        <span style="font-size: 1.5rem;">Orders</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="../pages/Others.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-book-fill"></i></span>
+                        <span style="font-size: 1.5rem;">Others</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--------------slider------------->
+
+<main>
+    <section>
+
+        <div style="display: inline-block; color: white;" class="border-5">
+            <i class="bi bi-cash-coin" style="font-size: 28px;"></i>
+            <h2 style="margin-left: 15px; display: inline-block;">Place an Order</h2>
+        </div><br>
+
+        <div class="d-flex gap-4">
+            <div class="" style="max-height: fit-content; width: 450px">
+
+                <div class="card text-bg-secondary shadow-lg" style="padding: 0; margin: 0;">
+                    <div class="card-body shadow-none" style="padding: 0; margin: 0;">
+                        <h5 class="card-title fw-bold text-center">Invoice Details</h5>
+                        <hr class="table-group-divider bg-black">
+                        <div class="row g-2">
+                            <!--                        id-->
+                            <div class="col-md-5 px-3 shadow-none">
+                                <label for="orderID" class="form-label">Order ID : </label>
+                                <input type="text" class="form-control" id="orderID" placeholder="O00-0XX">
+                            </div>
+
+
+                            <div class="col-md-6 shadow-none" style="padding-right: 0;">
+                                <label for="orDate" class="form-label">Date :</label>
+                                <input type="date" class="form-control" id="orDate">
+                            </div>
+
+                            <div class="col-md-5 shadow-none px-3">
+                                <label for="inputState" class="form-label">Customer ID :</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6"  style="padding-right: 0;">
+                                <label for="inputName" class="form-label">Name :</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Mr. Fernando">
+                            </div>
+
+                            <div class="col-md-5 px-3">
+                                <label for="inputContact" class="form-label">Contact Number :</label>
+                                <input type="text" class="form-control" id="inputContact" placeholder="+94-xxx xxx xx">
+                            </div>
+
+                            <div class="col-md-6"  style="padding-right: 0;">
+                                <label for="inputAddress2" class="form-label">Address :</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+
+                            <div class="d-flex ms-5 gap-xl-5">
+
+                                <!--                            update button-->
+                                <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                    Clear All
+                                </button>
+
+                                <button class="btn btn-success ms-3" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">
+                                    <i class="bi bi-person-plus-fill"></i> Add New Customer
+                                </button>
+                                <!-- Modal -->
+                                <!-- Modal -->
+                                <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="saveCustomerLabel" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-dark">
+                                                <h5 class="modal-title" id="">Save New Customer Details</h5>
+                                                <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button"></button>
+                                            </div>
+                                            <div class="modal-body bg-dark">
+                                                <section>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="formFile">Customer ID</label>
+                                                        <input class="form-control" id="formFile" type="text">
+                                                    </div>
+                                                    <div class="mb-3 shadow-none">
+                                                        <label class="form-label" for="formFileMultiple">Customer Name</label>
+                                                        <input class="form-control" id="formFileMultiple" multiple type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="formFileDisabled">Customer Address</label>
+                                                        <input class="form-control" id="formFileDisabled" type="text">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="formFileSm">Customer Salary</label>
+                                                        <input class="form-control form-control-sm" id="formFileSm" type="number">
+                                                    </div>
+
+                                                </section>
+                                            </div>
+                                            <div class="modal-footer bg-dark">
+                                                <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
+                                                <button class="btn btn-success" type="button">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                            delete button-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                text section-->
+
+                    <!--                <form class="row g-2 bg-black" style="margin-top: -30px;">-->
+
+                    <!--                        button section-->
+                    <!--                </form>-->
+                    <!--                    text section-->
+                </div>
+            </div>
+
+            <div class="" style="max-height: fit-content; padding: 0; margin: 0; width: 450px">
+
+                <div class="card text-bg-warning shadow-lg" style="padding: 0; margin: 0;">
+                    <div class="card-body shadow-none" style="padding: 0; margin: 0;">
+                        <h5 class="card-title fw-bold text-center">Select Item</h5>
+                        <hr class="table-group-divider bg-black">
+                        <div class="row g-2">
+
+                            <div class="col-md-5 shadow-none px-3">
+                                <label for="itemCode" class="form-label">Item Code :</label>
+                                <select id="itemCode" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 shadow-none"  style="padding-right: 0;">
+                                <label for="description" class="form-label">Description :</label>
+                                <input type="text" class="form-control" id="description" placeholder="----------------">
+                            </div>
+
+                            <div class="col-md-5 px-3">
+                                <label for="unitPrice" class="form-label">Unit Price :</label>
+                                <input type="text" class="form-control" id="unitPrice" placeholder="Rs. 0.00">
+                            </div>
+
+                            <div class="col-md-6"  style="padding-right: 0;">
+                                <label for="qtyOnH" class="form-label">Qty On Hand :</label>
+                                <input type="text" class="form-control" id="qtyOnH" placeholder="XXX">
+                            </div>
+
+                            <div class="col-md-10 px-3"  style="padding-right: 0;">
+                                <label for="qty" class="form-label">Order Quantity :</label>
+                                <input type="number" class="form-control" id="qty" placeholder="XXX">
+                            </div>
+
+                            <div class="d-flex ms-5 gap-xl-5">
+
+                                <!--                            update button-->
+                                <button class="btn btn-danger" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                    Clear All
+                                </button>
+
+                                <button class="btn btn-success ms-3" data-bs-target="" data-bs-toggle="modal" type="button">
+                                    <i class="bi bi-cart-plus-fill"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                text section-->
+
+                    <!--                <form class="row g-2 bg-black" style="margin-top: -30px;">-->
+
+                    <!--                        button section-->
+                    <!--                </form>-->
+                    <!--                    text section-->
+                </div>
+            </div>
+
+            <div class="col-lg-2 ms-auto">
+                <div class="card text-bg-light mb-3" style="max-width: 19rem;">
+                    <div class="card-body" style="padding: 0; margin: 0;">
+                        <h5 class="card-title fw-bolder text-center text-black">Bill</h5>
+                        <hr class="table-group-divider bg-black">
+                        <h4 class="card-title text-danger">Total :</h4>
+                        <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>
+
+                        <div class="col-md-10 px-3"  style="padding-right: 0;">
+                            <label for="discount" class="form-label fw-bolder">Discount :</label>
+                            <input type="number" class="form-control form-control-sm" id="discount" placeholder="%">
+                        </div>
+
+                        <h4 class="card-title text-danger">SubTotal :</h4>
+                        <label class="card-title fw-bolder text-danger ms-3"><h5>Rs. 0.00</h5></label>
+
+<!--                        <div class="shadow-none col-11 px-2">-->
+<!--                            <label for="paymentMethod" class="form-label">Payment Method :</label>-->
+<!--                            <select id="paymentMethod" class="form-select bg-success text-light">-->
+<!--                                <option selected class="bg-light text-black">Cash</option>-->
+<!--                                <option selected class="bg-light text-black">Credit Card</option>-->
+<!--                                <option selected class="bg-light text-black">Debit Card</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+                        <div class="col-md-12 px-3 shadow-none">
+                            <label for="cash" class="form-label fw-bolder">Balance : </label>
+                            <input type="text" class="form-control form-control-sm" id="cash" placeholder="Rs. 0.00">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div style="height:180px; overflow-y: scroll">
+            <table class="table table-bordered bg-dark table-responsive">
+                <thead class="bg-success text-white text-center">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Description</th>
+                    <th>Unit Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                    <th>----</th>
+                </tr>
+                </thead>
+                <tbdoy class="bg-dark">
+                    <tr class="text-light bg-dark">
+                        <td>I00-001</td>
+                        <td>Keerisamba 10kg</td>
+                        <td>2255.00</td>
+                        <td>1</td>
+                        <td>2255.00</td>
+                        <td class="text-center"><button class="btn btn-sm btn-danger">Delete</button></td>
+                    </tr>
+                    <!--                <tr class="text-light bg-dark">-->
+                    <!--                    <td>I00-010</td>-->
+                    <!--                    <td>Chocolate Cream Biscuit large</td>-->
+                    <!--                    <td>600.00</td>-->
+                    <!--                    <td>1</td>-->
+                    <!--                    <td>600.00</td>-->
+                    <!--                    <td><button class="btn btn-sm btn-danger">Delete</button></td>-->
+                    <!--                </tr>-->
+                </tbdoy>
+            </table>
+        </div>
+    </section>
+</main>
+</body>
+</html>

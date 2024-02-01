@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-05</title>
+    <style>
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        section {
+            width: 98vw;
+            height: 98vh;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+
+        section > div {
+            background-position: center;
+            box-shadow: 1px 2px 3px 1px rgba(0,0,0,0.68);
+        }
+
+        section>div>img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div><img src="assets/01.jpg"></div>
+    <div><img src="assets/02.jpg"></div>
+    <div><img src="assets/03.jpg"></div>
+    <div><img src="assets/04.jpg"></div>
+    <div><img src="assets/05.jpg"></div>
+    <div><img src="assets/06.png"></div>
+    <div><img src="assets/07.jfif"></div>
+    <div><img src="assets/08.jpg"></div>
+    <div><img src="assets/09.jpg"></div>
+    <div><img src="assets/10.jpg"></div>
+    <div><img src="assets/11.jpg"></div>
+    <div><img src="assets/12.webp"></div>
+</section>
+
+</body>
+</html>

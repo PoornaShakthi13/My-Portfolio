@@ -1,0 +1,116 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 29/09/2022
+* @Project: My-Portfolio
+* */
+
+/*body{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    background-color: rgb(11, 23, 47);*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+.card {
+    background: black;
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+}
+
+.card .content {
+    widows: 400;
+    padding: 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.card .content a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-top: 10px;
+    transition: 1s;
+    transition-property: background-color;
+}
+
+.card .content a:hover {
+    background-color: #ff253a;
+}
+
+.card .sliderText {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.card .sliderText img {
+    width: 99%;
+    height: 100%;
+}
+
+.card .sliderText video {
+    width: 99%;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/01.jpg");
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+    padding-top: 200px;
+}
+
+.swiper-wrapper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 350px;
+    background-color: #000;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+    -webkit-box-reflect: below 0 linear-gradient(transparent,transparent,#0006);
+}
+
+body>div:nth-child(1){
+    position: absolute;
+    top: 0;
+    margin: auto;
+    color: #fd4c4c;
+    font-size: 25px;
+}
+
+body>div:nth-child(1)>h2 {
+    -webkit-box-reflect: below 0 linear-gradient(transparent,transparent,#ffe8e8);
+}
+

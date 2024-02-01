@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abhishek POS System</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #1C2E4C">
+
+<!--------------navbar------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.76);">
+    <div class="container-fluid">
+        <img src="assets/img/my-logo.png" style="width: 150px; height: 50px">
+        <a class="navbar-brand" href="#" style="margin-top: 5px; margin-left: 5px; color: red; font-size: 2rem;">POS SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="btn btn-outline-danger ms-auto" type="submit"><i class="bi bi-box-arrow-right" style="margin-right: 10px"></i>Log out</button>
+        </div>
+    </div>
+</nav>
+<!--------------navbar------------->
+
+<!--------------slider------------->
+
+<div class="offcanvas offcanvas-start bg-dark text-white position-fixed" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" style="transform: none; width: 200px; top: 80px; visibility: visible !important; font-family: 'Michroma', sans-serif;">
+    <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <li>
+                    <div class="text-muted fw-bold px-lg-4" style="font-size: 2rem">Menu</div><br>
+                </li>
+                <li>
+                    <hr class="table-group-divider">
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2" id="dashboardBtn">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-speedometer2"></i></span>
+                        <span style="font-size: 1.5rem;">Dash Board</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link px-2" id="customerBtn">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-people-fill"></i></span>
+                        <span style="font-size: 1.5rem;">Customers</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link px-2" id="itemBtn">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-stack"></i></span>
+                        <span style="font-size: 1.5rem;">Items</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link px-2" id="ordersBtn" type="button">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-cart4"></i></span>
+                        <span style="font-size: 1.5rem;">Orders</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link px-2" id="detailsBtn">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-book-fill"></i></span>
+                        <span style="font-size: 1.5rem;">Details</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--------------slider------------->
+
+<main>
+    <section>
+
+<!--        Dash board content-->
+        <section id="DashboardContent">
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="bi bi-pie-chart-fill" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Dash Board</h2>
+            </div><br><br><br>
+
+            <div class="d-flex gap-5 text-center ms-5">
+                <div class="col-5 shadow-none">
+                    <div class="card mb-3 bg-primary" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-primary my-5">
+                                <img src="assets/img/users-100.png" class="img-fluid rounded-end" alt="...">
+                            </div>
+                            <div class="col-md-8 bg-primary">
+                                <div class="card-body">
+                                    <h1 class="card-title">Total Customers</h1>
+                                    <h3  class="card-title">122</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 ms-5 shadow-none">
+                    <div class="card mb-3 bg-danger" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-danger my-5">
+                                <img src="assets/img/cash-100.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 bg-danger">
+                                <div class="card-body">
+                                    <h1 class="card-title">Today &nbsp;  Income</h1>
+                                    <h3 class="card-title">Rs. 25295.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex gap-5 text-center ms-5">
+                <div class="col-5 shadow-none">
+                    <div class="card mb-3 bg-warning" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-warning my-5">
+                                <img src="assets/img/shopping-bag-100.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 bg-warning">
+                                <div class="card-body">
+                                    <h1 class="card-title">Total &nbsp; Products</h1>
+                                    <h3 class="card-title">74</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 ms-5 shadow-none">
+                    <div class="card mb-3 bg-success" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4 bg-success my-5">
+                                <img src="assets/img/chart-100.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body bg-success">
+                                    <h1 class="card-title">Today Total Orders</h1>
+                                    <h3 class="card-title">1026</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--        Dash board content-->
+
+<!--        customer content-->
+        <section id="customerContent">
+            <!--    header-->
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="fa-solid fa-users-between-lines" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Customers</h2>
+                <!--        new customer button-->
+                <!-- Button trigger modal -->
+                <button class="btn btn-lg btn-success position-absolute end-0 shadow-lg" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" type="button">
+                    <i class="bi bi-person-plus-fill"></i> Add New Customer
+                </button>
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="saveCustomerLabel" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark">
+                                <h5 class="modal-title">Save New Customer Details</h5>
+                                <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button"></button>
+                            </div>
+                            <div class="modal-body bg-dark">
+                                <section>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="txtCustomerID">Customer ID</label>
+                                        <input class="form-control" id="txtCustomerID" type="text">
+                                    </div>
+                                    <div class="mb-3 shadow-none">
+                                        <label class="form-label" for="txtCustomerName">Customer Name</label>
+                                        <input class="form-control" id="txtCustomerName" multiple type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                                        <input class="form-control" id="txtCustomerAddress" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="txtCustomerContact">Customer Contact</label>
+                                        <input class="form-control form-control-sm" id="txtCustomerContact" type="number">
+                                    </div>
+
+                                </section>
+
+
+
+                            </div>
+                            <div class="modal-footer bg-dark">
+                                <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
+                                <button class="btn btn-success" id="btnSaveCustomer" type="button">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--        new customer button-->
+            </div><br><br>
+
+
+            <div class="col-12 d-flex gap-5">
+
+                <!--            search section-->
+                <div class="col-4 bg-success shadow-none ">
+                    <div class="d-flex bg-dark shadow-none" role="">
+                        <input class="form-control me-2" id="txtSearch" type="" placeholder="Search Customer by ID/Name" aria-label="Search">
+                        <button class="btn btn-outline-light bg-dark" id="btnSearch" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                    <div class="card text-bg-success mb-4 col-12 shadow-none" style="max-width: 25rem; top:0.5rem;">
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-1">
+                                    <label for="txtSearchName"  class="col-sm-3 col-form-label">Name</label>
+                                    <div class="col-sm-8 shadow-none">
+                                        <input type="email" class="form-control" id="txtSearchName">
+                                    </div>
+                                </div>
+                            </form>
+                            <form>
+                                <div class="row mb-1">
+                                    <label for="txtSearchAddress" class="col-sm-3 col-form-label">Address</label>
+                                    <div class="col-sm-8 shadow-none">
+                                        <input type="email" class="form-control" id="txtSearchAddress">
+                                    </div>
+                                </div>
+                            </form>
+                            <form>
+                                <div class="row mb-1">
+                                    <label for="txtSearchContact" class="col-sm-3 col-form-label">Contact</label>
+                                    <div class="col-sm-8 shadow-none">
+                                        <input type="email" class="form-control" id="txtSearchContact">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--            update and delete section-->
+                <div class="col-7 ms-auto shadow-none" style="max-height: fit-content;">
+
+                    <div class="card text-bg-primary mb-0 shadow-none" style="max-width: 40rem;">
+                        <div class="card-body shadow-none">
+                            <h5 class="card-title text-danger fw-bold text-center">Update or Delete Customer</h5>
+                            <hr class="table-group-divider bg-black">
+                        </div>
+
+                        <!--                text section-->
+
+                        <form class="row g-2" style="margin-top: -30px;">
+                            <!--                        id-->
+                            <div class="col-md-4 shadow-none px-3">
+                                <label for="updateID" class="form-label">Customer ID</label>
+                                <input type="text" class="form-control" id="updateID" placeholder="C00-XXX">
+                            </div>
+                            <!--                        id-->
+
+                            <!--                        name-->
+                            <div class="col-md-7 shadow-none">
+                                <label for="updateName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="updateName" placeholder="Mr.Fernando">
+                            </div>
+                            <!--                        name-->
+
+                            <!--                        address-->
+                            <div class="col-7 px-3">
+                                <label for="updateAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="updateAddress" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <!--                        adders-->
+
+                            <!--                        contact-->
+                            <div class="col-md-4">
+                                <label for="updateContact" class="form-label">Contact Number</label>
+                                <input type="text" class="form-control" id="updateContact" placeholder="+94-xxx xxx xx">
+                            </div>
+                            <!--                        contact-->
+
+                            <!--                        button section-->
+                            <div class="d-flex col-4 gap-2 ms-auto">
+
+                                <!--                            update button-->
+                                <button class="btn btn-primary bg-warning" id="btnUpdateCustomer" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                    <i class="bi bi-arrow-clockwise"></i> Update
+                                </button>
+                                <!--                            update button-->
+                                <!--                            delete button-->
+                                <button class="btn btn-primary bg-danger" id="btnDeleteCustomer" data-bs-target="#exampleModal2" data-bs-toggle="modal" type="button">
+                                    <i class="bi bi-trash3-fill"></i> Delete
+                                </button>
+                                <!--                            delete button-->
+                            </div>
+                            <!--                        button section-->
+                        </form>
+                        <!--                    text section-->
+                    </div>
+                </div>
+                <!--            update and delete section-->
+            </div><br><br>
+
+            <div class="col-12" style="height:180px; overflow-y: scroll">
+                <table class="table table-bordered">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCustomer"></tbody>
+                </table>
+            </div>
+
+
+        </section>
+<!--        customer content-->
+
+<!--        items content-->
+        <section id="ItemsContent">
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="bi bi-box-fill" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Items</h2>
+
+                <button class="btn btn-lg btn-success position-absolute end-0 shadow-lg" data-bs-target="#saveItemLabel" data-bs-toggle="modal" type="button">
+                    <i class="bi bi-file-plus-fill"></i> Add New Item
+                </button>
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="saveItemLabel" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark">
+                                <h5 class="modal-title" id="">Add New Item Here</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                            </div>
+                            <div class="modal-body bg-dark">
+                                <section>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemCode" placeholder="I00-XX">
+                                        <label class="text-black" for="itemCode">Item Code</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="Description" placeholder="item name">
+                                        <label class="text-black" for="Description">Description</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="price" placeholder="Rs. 0.00">
+                                        <label class="text-black" for="price">Unit Price</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="qty" placeholder="Quantity of Item">
+                                        <label class="text-black" for="qty">Qty</label>
+                                    </div>
+
+                                </section>
+                            </div>
+                            <div class="modal-footer bg-dark">
+                                <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cancel</button>
+                                <button class="btn btn-success" id="btnSaveItem" type="button">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--        header-->
+
+
+                <div class="d-flex col-12">
+                    <div class="card text-bg-primary mb-3 col-4">
+                        <div class="card-body">
+                            <form class="row g-2">
+                                <h5 class="card-title text-warning">Item Details Update and Delete</h5>
+                                <hr class="table-group-divider">
+                                <div class="col-md-12 shadow-none d-flex" style="padding: 0; margin-top: 0;">
+                                    <div class="col-md-8 shadow-none">
+                                        <input class="form-control col-md-12" id="txtItemSearch" type="search" placeholder="Search" aria-label="Search">
+                                    </div>
+                                    <div class="shadow-none col-md-3 ms-auto">
+                                        <button class="btn btn-success col-md-12" type="button" id="btnItemSearch">Search</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputCode" class="form-label">Item Code</label>
+                                    <input type="text" class="form-control" id="inputCode">
+                                </div>
+
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputDescription" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="inputDescription">
+                                </div>
+
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputPrice" class="form-label">Item Price</label>
+                                    <input type="text" class="form-control" id="inputPrice" placeholder="Rs. 0.00">
+                                </div>
+
+                                <div class="col-md-12 shadow-none">
+                                    <label for="inputQty" class="form-label">Quantity</label>
+                                    <input type="number" class="form-control" id="inputQty" placeholder="00">
+                                </div>
+
+                                <div class="col-md-12" style="padding: 0">
+                                    <button class="btn btn-primary bg-warning col-5" data-bs-target="#exampleModal" data-bs-toggle="modal" id="btnUpdateItem" type="button">
+                                        <i class="bi bi-arrow-clockwise"></i> Update
+                                    </button>
+                                    <button class="btn btn-primary bg-danger col-5 ms-auto" data-bs-target="#exampleModal2" id="btnDeleteItem" data-bs-toggle="modal" type="button">
+                                        <i class="bi bi-trash3-fill"></i> Delete
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="col-8 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
+                        <div class="col-11 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
+                            <div class="col-12" style="height:470px; overflow-y: scroll">
+                                <table class="table table-bordered bg-dark table-responsive col-7">
+                                    <thead class="bg-warning text-black text-center">
+                                    <tr>
+                                        <th>Item Code</th>
+                                        <th>Description</th>
+                                        <th>Unit Price</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tblItem">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<!--        item content-->
+
+<!--        order content-->
+        <section id="OrderContent">
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="bi bi-cash-coin" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Place an Order</h2>
+            </div><br>
+
+            <div class="d-flex gap-2">
+                <div class="" style="max-height: fit-content; width: 450px">
+
+                    <div class="card text-bg-secondary shadow-lg" style="padding: 0; margin: 0;">
+                        <div class="card-body shadow-none" style="padding: 0; margin: 0;">
+                            <h5 class="card-title fw-bold text-center">Invoice Details</h5>
+                            <hr class="table-group-divider bg-black">
+                            <div class="row g-2">
+
+                                <div class="col-md-5 shadow-none px-3">
+                                    <label for="cmbCustomerID" class="form-label">Customer ID :</label>
+                                    <select id="cmbCustomerID" name="id" class="form-select"></select>
+                                </div>
+
+                                <div class="col-md-6 shadow-none"  style="padding-right: 0;">
+                                    <label for="orderInputName" class="form-label">Name :</label>
+                                    <input type="text" class="form-control" id="orderInputName" placeholder="Mr. Fernando">
+                                </div>
+
+                                <div class="col-md-5 px-3">
+                                    <label for="orderInputContact" class="form-label">Contact Number :</label>
+                                    <input type="text" class="form-control" id="orderInputContact" placeholder="+94-xxx xxx xx">
+                                </div>
+
+                                <div class="col-md-6"  style="padding-right: 0;">
+                                    <label for="orderInputAddress2" class="form-label">Address :</label>
+                                    <input type="text" class="form-control" id="orderInputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+
+                                <div class="d-flex ms-5 gap-xl-5">
+
+                                    <!--                            update button-->
+                                    <button class="btn btn-danger" id="btnCancelCustomer" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+                                        Clear All
+                                    </button>
+
+                                    <button class="btn btn-success ms-3" data-bs-target="#saveCustomerLabel" data-bs-toggle="modal" id="btnAddNewCustomer" type="button">
+                                        <i class="bi bi-person-plus-fill"></i> Add New Customer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                text section-->
+
+                        <!--                <form class="row g-2 bg-black" style="margin-top: -30px;">-->
+
+                        <!--                        button section-->
+                        <!--                </form>-->
+                        <!--                    text section-->
+                    </div>
+                </div>
+
+                <div class="shadow-none" style="max-height: fit-content; padding: 0; margin: 0; width: 400px">
+
+                    <div class="card text-bg-warning shadow-none" style="padding: 0; margin: 0;">
+                        <div class="card-body shadow-none" style="padding: 0; margin: 0;">
+                            <h5 class="card-title fw-bold text-center">Select Item</h5>
+                            <hr class="table-group-divider bg-black">
+                            <div class="row g-2">
+
+                                <div class="col-md-5 shadow-none px-3">
+                                    <label for="itemCodeOrder" class="form-label">Item Code :</label>
+                                    <select id="itemCodeOrder" class="form-select"></select>
+                                </div>
+
+                                <div class="col-md-6 shadow-none"  style="padding-right: 0;">
+                                    <label for="descriptionOrder" class="form-label">Description :</label>
+                                    <input type="text" class="form-control" id="descriptionOrder" placeholder="----------------">
+                                </div>
+
+                                <div class="col-md-5 px-3">
+                                    <label for="unitPrice" class="form-label">Unit Price :</label>
+                                    <input type="text" class="form-control" id="unitPrice" placeholder="Rs. 0.00">
+                                </div>
+
+                                <div class="col-md-6"  style="padding-right: 0;">
+                                    <label for="qtyOnH" class="form-label">Qty On Hand :</label>
+                                    <input type="number" class="form-control" id="qtyOnH" placeholder="XXX">
+                                </div>
+
+                                <div class="col-md-10 px-3"  style="padding-right: 0;">
+                                    <label for="qtyOrder" id="orderQty" class="form-label">Order Quantity :</label>
+                                    <input type="number" class="form-control" id="qtyOrder" placeholder="XXX">
+                                </div>
+
+                                <div class="d-flex ms-5 gap-xl-5">
+
+                                    <!--                            update button-->
+                                    <button class="btn btn-danger" data-bs-target="#exampleModal" id="btnCancelitem" data-bs-toggle="modal" type="button">
+                                        Clear All
+                                    </button>
+
+                                    <button class="btn btn-success ms-3" data-bs-target="#" id="btnAddToCart" data-bs-toggle="modal" type="button">
+                                        <i class="bi bi-cart-plus-fill"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                text section-->
+
+                        <!--                <form class="row g-2 bg-black" style="margin-top: -30px;">-->
+
+                        <!--                        button section-->
+                        <!--                </form>-->
+                        <!--                    text section-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 ms-auto">
+                    <div class="card text-bg-light mb-3" style="max-width: 19rem;">
+                        <div class="card-body" style="padding: 0; margin: 0;">
+                            <h5 class="card-title fw-bolder text-center text-black">Bill</h5>
+                            <hr class="table-group-divider bg-black">
+                            <h4 class="card-title text-danger">Total :</h4>
+                            <label class="card-title fw-bolder text-danger ms-3"><h5 id="lblTotal">Rs. 0.00</h5></label>
+
+                            <div class="d-flex col-12">
+                                <div class="col-md-5 px-3">
+                                    <label for="discount" class="form-label fw-bolder">Discount :</label>
+                                    <input type="number" class="form-control form-control-sm" id="discount" placeholder="0.00">
+                                </div>
+
+                                <div class="col-lg-5 shadow-none" >
+                                    <label for="txtCash" class="form-label fw-bolder">Cash :</label>
+                                    <input type="number" class="form-control form-control-sm" id="txtCash" placeholder="0.00">
+                                </div>
+
+                            </div>
+                            <h4 class="card-title text-danger">SubTotal :</h4>
+                            <label class="card-title fw-bolder text-danger ms-3" ><h5 id="lblSubTotal">Rs. 0.00</h5></label>
+
+                            <div class="col-md-12 px-3 shadow-none">
+                                <label for="cash" class="form-label fw-bolder">Balance : </label>
+                                <input type="text" class="form-control form-control-sm" id="cash" placeholder="Rs. 0.00">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="col-12 ms-auto shadow-none" style="margin-right: 10px; margin-top: 10px;">
+            <div style="height:180px; overflow-y: scroll">
+                <table class="table table-bordered bg-dark table-responsive">
+                    <thead class="bg-success text-white text-center">
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody class="bg-dark" id="tblOrder"></tbody>
+                </table>
+            </div>
+            </div>
+
+            <button class="btn btn-lg btn-success ms-2" id="btnPlaceOrder" data-bs-toggle="modal" type="button" style="margin-bottom: 20px;">
+                <i class="bi bi-file-plus-fill"></i> Place Order
+            </button>
+        </section>
+<!--        order content-->
+
+<!--        details content-->
+        <section id="detailsContent">
+            <div style="display: inline-block; color: white;" class="border-5">
+                <i class="bi bi-cash-coin" style="font-size: 28px;"></i>
+                <h2 style="margin-left: 15px; display: inline-block;">Order Details</h2>
+            </div><br>
+
+
+            <div class="col-12 ms-auto shadow-none" style="margin-right: 10px; margin-top: 50px;">
+                <div style="height:300px; overflow-y: scroll">
+                    <table class="table table-bordered bg-dark table-responsive">
+                        <thead class="bg-success text-white text-center">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Amount</th>
+                            <th>Discount</th>
+                            <th>Date</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-dark" id="tblOrderDetails"></tbody>
+                    </table>
+                </div>
+            </div>
+            <br><br><br><br>
+
+            <button class="btn btn-lg btn-danger" data-bs-target="#exampleModal" id="btnClearOrderDetailTbl" data-bs-toggle="modal" type="button">
+                Clear All
+            </button>
+
+        </section>
+<!--        details content-->
+
+    </section>
+</main>
+
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="controller/IndexController.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemsController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

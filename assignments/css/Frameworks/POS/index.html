@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abhishek POS System</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #1C2E4C">
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/bootstrap.bundle.js"></script>
+
+<!--------------navbar------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.76);">
+    <div class="container-fluid">
+        <img src="assets/img/my-logo.png" style="width: 150px; height: 50px">
+        <a class="navbar-brand" href="#" style="margin-top: 5px; margin-left: 5px; color: red; font-size: 2rem;">POS SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="btn btn-outline-danger ms-auto" type="submit"><i class="bi bi-box-arrow-right" style="margin-right: 10px"></i>Log out</button>
+        </div>
+    </div>
+</nav>
+<!--------------navbar------------->
+
+<!--------------slider------------->
+
+<div class="offcanvas offcanvas-start bg-dark text-white position-fixed" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" style="transform: none; width: 200px; top: 80px; visibility: visible !important; font-family: 'Michroma', sans-serif;">
+    <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <li>
+                    <div class="text-muted fw-bold px-lg-4" style="font-size: 2rem">Menu</div><br>
+                </li>
+                <li>
+                    <hr class="table-group-divider">
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-speedometer2"></i></span>
+                        <span style="font-size: 1.5rem;">Dash Board</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="pages/Customer.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-people-fill"></i></span>
+                        <span style="font-size: 1.5rem;">Customers</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="pages/Items.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-stack"></i></span>
+                        <span style="font-size: 1.5rem;">Items</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="pages/Orders.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-cart4"></i></span>
+                        <span style="font-size: 1.5rem;">Orders</span>
+                    </a>
+                </li>
+                <li class="my-1">
+                    <hr class="table-group-divider">
+                </li>
+
+                <li>
+                    <a href="pages/Others.html" class="nav-link px-2">
+                        <span class="me-3" style="font-size: 1.5rem;"><i class="bi bi-book-fill"></i></span>
+                        <span style="font-size: 1.5rem;">Details</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--------------slider------------->
+
+<main>
+    <section>
+        <div style="display: inline-block; color: white;" class="border-5">
+            <i class="bi bi-pie-chart-fill" style="font-size: 28px;"></i>
+            <h2 style="margin-left: 15px; display: inline-block;">Dash Board</h2>
+        </div><br><br><br>
+
+        <div class="d-flex gap-5 text-center ms-5">
+           <div class="col-5 shadow-none">
+               <div class="card mb-3 bg-primary" style="max-width: 540px;">
+                   <div class="row g-0">
+                       <div class="col-md-4 bg-primary my-5">
+                           <img src="assets/img/users-100.png" class="img-fluid rounded-end" alt="...">
+                       </div>
+                       <div class="col-md-8 bg-primary">
+                           <div class="card-body">
+                               <h1 class="card-title">Total Customers</h1>
+                               <h3 class="card-title">122</h3>
+
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-5 ms-5 shadow-none">
+               <div class="card mb-3 bg-danger" style="max-width: 540px;">
+                   <div class="row g-0">
+                       <div class="col-md-4 bg-danger my-5">
+                           <img src="assets/img/cash-100.png" class="img-fluid rounded-start" alt="...">
+                       </div>
+                       <div class="col-md-8 bg-danger">
+                           <div class="card-body">
+                               <h1 class="card-title">Today &nbsp;  Income</h1>
+                               <h3 class="card-title">Rs. 25295.00</h3>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <div class="d-flex gap-5 text-center ms-5">
+            <div class="col-5 shadow-none">
+                <div class="card mb-3 bg-warning" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 bg-warning my-5">
+                            <img src="assets/img/shopping-bag-100.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 bg-warning">
+                            <div class="card-body">
+                                <h1 class="card-title">Total &nbsp; Products</h1>
+                                <h3 class="card-title">74</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 ms-5 shadow-none">
+                <div class="card mb-3 bg-success" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 bg-success my-5">
+                            <img src="assets/img/chart-100.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body bg-success">
+                                <h1 class="card-title">Today Total Orders</h1>
+                                <h3 class="card-title">1026</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

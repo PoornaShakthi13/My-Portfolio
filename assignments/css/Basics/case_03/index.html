@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case-03</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <style>
+        main>section {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        main>section:nth-child(1) {
+            position: absolute;
+            background-color: white;
+        }
+
+        main>section:nth-child(2) {
+            position: absolute;
+            top: 100vh;
+        }
+
+        main>section:nth-child(3) {
+            position: absolute;
+            top: 200vh;
+        }
+
+        main>section:nth-child(1)>div:first-of-type{
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            border: 20px solid #826767;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+        }
+
+        main>section:nth-child(1)>div:first-of-type>div{
+            width: 220px;
+            height: 220px;
+            border-radius: 100%;
+            border: 15px solid red;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+        }
+
+        main>section:nth-child(1)>div:nth-child(2){
+            width: 220px;
+            height: 220px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: #7700ff;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main>section:nth-child(1)>div:nth-child(2)>h1 {
+            color: white;
+            position: absolute;
+            margin-left: 35%;
+            margin-top: 40%;
+        }
+
+        main>section:nth-child(2)>div {
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #31c1bd;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        main>section:nth-child(3)>div {
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #fc6e8b;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        main>section:nth-child(2)>div>h1 {
+            color: white;
+            position: absolute;
+            margin-left: 25%;
+            margin-top: 25%;
+            justify-content: center;
+        }
+
+        main>section:nth-child(3)>div>h1 {
+            color: white;
+            position: absolute;
+            margin-left: 15%;
+            margin-top: 25%;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<main>
+    <section>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <h1>Hello</h1>
+        </div>
+    </section>
+
+    <section>
+        <div><h1>Welcome To</h1></div>
+    </section>
+
+    <section>
+        <div><h1>Institute of Software Engineering</h1></div>
+    </section>
+
+</main>
+
+</body>
+</html>

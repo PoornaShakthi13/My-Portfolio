@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Calculator</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main>
+        <h1>Calculator</h1>
+        <section>
+            <div class="cal">
+
+                <!--            answer and c-->
+                <div>
+                    <div>
+                        <input type="text" id="lblNumber1">
+                        <input type="text" id="lblNumber2">
+                    </div>
+                    <button id="clear">C</button>
+                </div>
+                <!--            answer and c-->
+
+                <div>
+                    <button id="one">1</button>
+                    <button id="two">2</button>
+                    <button id="three">3</button>
+                    <button id="plus">+</button>
+                </div>
+
+                <div>
+                    <button id="four">4</button>
+                    <button id="five">5</button>
+                    <button id="six">6</button>
+                    <button id="sub">-</button>
+                </div>
+
+                <div>
+                    <button id="seven">7</button>
+                    <button id="eight">8</button>
+                    <button id="nine">9</button>
+                    <button id="multiply">x</button>
+                </div>
+
+                <div>
+                    <button id="divide">/</button>
+                    <button id="zero">0</button>
+                    <button id="dot">.</button>
+                    <button id="equals">=</button>
+                </div>
+
+            </div>
+        </section>
+</main>
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+
+<script>
+
+    $("#one").click(function () {
+        calculateNumber("1")
+    });
+
+    $("#two").click(function () {
+        calculateNumber("2")
+    });
+
+    $("#three").click(function () {
+        calculateNumber("3")
+    });
+
+    $("#four").click(function () {
+        calculateNumber("4")
+    });
+
+    $("#five").click(function () {
+        calculateNumber("5")
+    });
+
+    $("#six").click(function () {
+        calculateNumber("6")
+    });
+
+    $("#seven").click(function () {
+        calculateNumber("7")
+    });
+
+    $("#eight").click(function () {
+        calculateNumber("8")
+    });
+
+    $("#nine").click(function () {
+        calculateNumber("9")
+    });
+
+    $("#zero").click(function () {
+        calculateNumber("0")
+    });
+
+    $("#plus").click(function () {
+        calculateNumber("+")
+    });
+
+    $("#sub").click(function () {
+        calculateNumber("-")
+    });
+
+    $("#divide").click(function () {
+        calculateNumber("/")
+    });
+
+    $("#multiply").click(function () {
+        calculateNumber("x")
+    });
+
+    $("#equals").click(function () {
+        calculateNumber("=")
+    });
+
+    $("#clear").click(function () {
+        calculateNumber("C")
+    });
+
+    $("#dot").click(function () {
+        calculateNumber(".")
+    });
+
+    var number1 = "";
+    var number2 = 0;
+
+    function calculateNumber(numb) {
+        var selected = numb;
+
+        if (selected==="+" || selected==="-" || selected ==="x" || selected ==="/"){
+            var val = selected;
+            $("#lblNumber2").val(selected);
+            convertNumber(number1);
+            number1 = "";
+        } else if (selected === "=") {
+            calculation(number1);
+            number1 = "";
+        } else if(selected === "C"){
+            number1 = "";
+            number2 = 0;
+            $("#lblNumber1").val("");
+            $("#lblNumber2").val("");
+        }else {
+            number1 = number1 + "" + numb;
+            $("#lblNumber1").val(number1);
+        }
+    }
+
+    function convertNumber(num2) {
+        number2 = parseInt(num2);
+    }
+
+    function calculation(calNum) {
+        var operator = $("#lblNumber2").val();
+
+        if (operator === "+") {
+            number2 = number2 + parseInt(calNum)
+            $("#lblNumber1").val(number2);
+        } else if (operator === "-") {
+            number2 = number2 - parseInt(calNum);
+            $("#lblNumber1").val(number2);
+        } else if (operator === "x") {
+            number2 = number2 * parseInt(calNum);
+            $("#lblNumber1").val(number2);
+        } else if (operator === "/") {
+            number2 = number2 / parseInt(calNum);
+            $("#lblNumber1").val(number2);
+        }
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 23/08/2022
+* @Project: My-Portfolio
+* */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e04f3b;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(246, 24, 33, 0.85);
+}
+
+header {
+    top: 0;
+    height: 100vh;
+}
+
+header>div {
+    background: black;
+    top: 0;
+    left: 0;
+    box-shadow: 0px -1px 8px 2px rgba(28, 23, 23, 0.91);
+    position: fixed;
+    width: 100vw;
+    height: 75px;
+    z-index: 3;
+}
+
+header>section:nth-child(1) {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+header>section:nth-child(1) {
+    height: 100vh;
+    width: 100vw;
+}
+
+header>section:nth-child(2)>video {
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    background-color: rgba(59, 59, 59, 0.22);
+}
+
+header>div>img {
+    width: 200px;
+    height: 50px;
+    left: 8px;
+    top: 10px;
+    margin: auto;
+    position: relative;
+}
+
+header>div>nav {
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+header>div>nav>ul>li {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+    padding: 15px;
+    border-left: 1px solid #bdbdbd;
+    transition: 0.5s;
+}
+header>div>nav>ul>li:hover{
+    border: 1px solid red;
+    color: #ff253a;
+}
+header>div>nav>ul>li>a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header>div>nav>ul>li>a:hover {
+    font-size: 21px;
+    color: #ff253a;
+}
+
+header>div>nav>ul>li:nth-child(8) {
+    border-right: 1px solid #bdbdbd;
+}
+
+header>section:nth-child(3){
+    position: absolute;
+    left: 0;
+    width: 99.1vw;
+    height: 100vh;
+}
+
+header>section:first-of-type>section:first-of-type{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 50px;
+    z-index: 1;
+}
+
+header>section:first-of-type>section:first-of-type>p:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 60px;
+    color: white;
+    font-weight: 600;
+}
+
+header>section:first-of-type>section:first-of-type>p:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    border: 0;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#ashinsa {
+    color: #ff253a;
+}
+
+header>section:first-of-type>section:first-of-type>p:nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 0;
+    margin-left: 60px;
+    color: white;
+    font-weight: 600;
+}
+
+header>section:first-of-type>section:first-of-type>p:nth-child(4) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    margin-top: 5px;
+    margin-left: 60px;
+    color: white;
+    font-weight: 600;
+}
+
+.hire-btn{
+    font-family: 'Poppins', sans-serif;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    margin-left: 150px;
+    padding: 12px 34px;
+    font-size: 23px;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+}
+.hire-btn:hover{
+    border: 3px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+header>section:first-of-type>section:nth-child(3) {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    bottom: 50px;
+    right: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+header>section:first-of-type>section:nth-child(3)>a>div {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.76);
+    transition: 0.5s;
+}
+
+header>section:first-of-type>section:nth-child(3)>a>div:hover{
+    transform: rotate(1grad) skewY(1grad) translate(20px, -15px);
+    box-shadow: -30px 5px 10px rgba(0, 0, 0, 0.89);
+}
+
+header>section:first-of-type>section:nth-child(3)>a:nth-child(1)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-linkedin-circled-96.png");
+}
+
+header>section:first-of-type>section:nth-child(3)>a:nth-child(2)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-facebook-96.png");
+}
+
+header>section:first-of-type>section:nth-child(3)>a:nth-child(3)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-instagram-96.png");
+}
+
+header>section:first-of-type>section:nth-child(3)>a:nth-child(4)>div {
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center;
+    background-image: url("../assets/icons/icons8-github-96.png");
+}
+
+.chatbot {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #015a11;
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.89);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.chatbot:hover {
+    width: 85px;
+    height: 85px;
+}
+
+.chatimg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.chatimg:hover {
+    transform: rotate(6.3rad);
+}
+
+header>div>div {
+    display: none;
+}
+
+.developer {
+    display: none;
+}
+
+.social-media {
+    display: none;
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+.loader>div {
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.loader>div>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}

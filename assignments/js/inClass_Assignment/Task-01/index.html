@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/mainStyles.css">
+
+</head>
+<body>
+<main>
+
+    <section>
+        <div id="display"></div>
+        <div>
+            <button type="button" id="start">Start</button>
+            <button type="button" id="end">End</button>
+        </div>
+    </section>
+
+</main>
+
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+
+    var colours = ['red', 'blue', 'green', 'yellow', 'orange', 'pink'];
+
+    var count = 0;
+    var color;
+    function changeColor() {
+        $("#display").css('background-color', colours[count]);
+        color = this.count;
+        count++;
+        if (count==colours.length){
+            count=0;
+        }
+    }
+
+    var id;
+    $("#start").click(function () {
+       id = setInterval(changeColor,500)
+    })
+
+    function stopColours(){
+        clearInterval(id)
+    }
+
+    $("#end").click(function () {
+        stopColours()
+    });
+
+</script>
+</body>
+</html>

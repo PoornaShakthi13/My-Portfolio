@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <title>Case - 02</title>
+    <style>
+
+        body {
+            background-color: #31c1bd;
+        }
+
+       div:first-of-type {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+       /*div:hover {*/
+       /*    transform: rotate(360deg);*/
+       /*    transition: 1s;*/
+       /*}*/
+
+        div>h1{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: white;
+            transition: 1s;
+        }
+
+        /*div:hover>h1 {*/
+        /*    transform: rotate(-360deg);*/
+        /*    transition: 1s;*/
+        /*}*/
+
+        div::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 100%;
+            border: 15px solid #ffffff;
+            border-top: 15px solid crimson;
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        div:hover::before {
+            transform: rotate(360deg);
+            transition: all 1s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>RWAD</h1>
+    </div>
+
+</body>
+</html>

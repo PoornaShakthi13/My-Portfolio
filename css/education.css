@@ -1,0 +1,364 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 06/09/2022
+* @Project: My-Portfolio
+* */
+
+main>section:nth-child(4) {
+    left: 0;
+    top: 600vh;
+    position: absolute;
+    width: 99vw;
+    height: 500px;
+    margin: 0;
+}
+
+main>section:nth-child(4)>div:nth-child(1) {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(4)>div:nth-child(2) {
+    position: absolute;
+    left: 40px;
+    width: 10px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(4)>div:nth-child(3) {
+    width: 99vw;
+    height: 60px;
+    background: linear-gradient(rgba(97, 97, 97, 0.68),#232323);
+}
+
+main>section:nth-child(4)>div:nth-child(3)>p{
+    top: 0;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-left: 80px;
+}
+
+.edu {
+    color: #ff5f20;
+    font-size: 55px;
+}
+
+.education {
+    position: relative;
+    height: 160vh;
+    width: 85%;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(26, 26, 26, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+}
+
+.education>div:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(2) {
+    position: absolute;
+    top: 250px;
+    right: 350px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(3) {
+    position: absolute;
+    top: 400px;
+    right: 450px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(4) {
+    position: absolute;
+    top: 550px;
+    right: 550px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(5) {
+    position: absolute;
+    top: 700px;
+    right: 650px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div:nth-child(6) {
+    position: absolute;
+    top: 850px;
+    right: 750px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.education>div>div:first-of-type {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid #a3020f;
+    background-color: white;
+    z-index: 1;
+}
+
+.education>div>div:nth-child(2) {
+    position: absolute;
+    right: -40px;
+    top: 4px;
+    width: 400px;
+    height: 95px;
+    background-image: linear-gradient(rgb(24, 35, 59), rgb(246, 135, 135));
+    border-radius: 12px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.89);
+}
+
+.education>div>div:nth-child(2)>h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    top: 0;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.education>div>div:nth-child(2)>h4 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-left: 50px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    line-height: 10px;
+}
+
+.education>div:nth-child(7){
+    width: 4px;
+    height: 84%;
+    background-color: #f44336;
+    position: absolute;
+    right: 75px;
+    top: 115px;
+}
+
+.education>i:first-of-type {
+    font-size: 25px;
+    color: #f44336;
+    position: absolute;
+    right: 67px;
+    top: 105px;
+}
+
+.education>div:nth-child(1)>div:first-of-type>img {
+    width: 90px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.education>div:nth-child(2)>div:first-of-type>img {
+    width: 80%;
+    height: 100%;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.education>div:nth-child(3)>div:first-of-type>img {
+    width: 80%;
+    height: 100%;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.education>div:nth-child(4)>div:first-of-type>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.education>div:nth-child(5)>div:first-of-type>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.education>div:nth-child(9) {
+    height: 3px;
+    width: 50px;
+    top: 150px;
+    background-color: #f44336;
+    left: 1025px;
+    position: relative;
+}
+
+.education>div:nth-child(10) {
+    height: 3px;
+    width: 150px;
+    top: 300px;
+    background-color: #f44336;
+    left: 925px;
+    position: relative;
+}
+
+.education>div:nth-child(11) {
+    height: 3px;
+    width: 250px;
+    top: 450px;
+    background-color: #f44336;
+    left: 825px;
+    position: relative;
+}
+
+.education>div:nth-child(12) {
+    height: 3px;
+    width: 350px;
+    top: 600px;
+    background-color: #f44336;
+    left: 725px;
+    position: relative;
+}
+
+.education>div:nth-child(13) {
+    height: 3px;
+    width: 450px;
+    top: 750px;
+    background-color: #f44336;
+    left: 625px;
+    position: relative;
+}
+
+.education>div:nth-child(14) {
+    height: 3px;
+    width: 550px;
+    top: 900px;
+    background-color: #f44336;
+    left: 525px;
+    position: relative;
+}
+
+.education>i:nth-child(15) {
+    font-size: 25px;
+    color: #f44336;
+    top: 121px;
+    left: 1020px;
+    position: relative;
+}
+
+.education>i:nth-child(16) {
+    font-size: 25px;
+    color: #f44336;
+    top: 273px;
+    left: 900px;
+    position: relative;
+}
+
+.education>i:nth-child(17) {
+    font-size: 25px;
+    color: #f44336;
+    top: 426px;
+    left: 780px;
+    position: relative;
+}
+
+.education>i:nth-child(18) {
+    font-size: 25px;
+    color: #f44336;
+    top: 580px;
+    left: 660px;
+    position: relative;
+}
+
+.education>i:nth-child(19) {
+    font-size: 25px;
+    color: #f44336;
+    top: 732px;
+    left: 540px;
+    position: relative;
+}
+
+.education>i:nth-child(20) {
+    font-size: 25px;
+    color: #f44336;
+    top: 885px;
+    left: 420px;
+    position: relative;
+}
+
+.education>div:nth-child(21) {
+    height: 15px;
+    width: 15px;
+    top: 100px;
+    border-radius: 100%;
+    background-color: #f44336;
+    left: 1065px;
+    position: relative;
+}
+
+.education>div:nth-child(22) {
+    height: 15px;
+    width: 15px;
+    top: 240px;
+    border-radius: 100%;
+    background-color: #f44336;
+    left: 1065px;
+    position: relative;
+}
+
+.education>div:nth-child(23) {
+    height: 15px;
+    width: 15px;
+    top: 375px;
+    border-radius: 100%;
+    background-color: #f44336;
+    left: 1065px;
+    position: relative;
+}
+
+.education>div:nth-child(24) {
+    height: 15px;
+    width: 15px;
+    top: 515px;
+    border-radius: 100%;
+    background-color: #f44336;
+    left: 1065px;
+    position: relative;
+}
+
+.education>div:nth-child(25) {
+    height: 15px;
+    width: 15px;
+    top: 650px;
+    border-radius: 100%;
+    background-color: #f44336;
+    left: 1065px;
+    position: relative;
+}
+
+.education>div:nth-child(26) {
+    height: 15px;
+    width: 15px;
+    top: 790px;
+    border-radius: 100%;
+    background-color: #f44336;
+    left: 1065px;
+    position: relative;
+}

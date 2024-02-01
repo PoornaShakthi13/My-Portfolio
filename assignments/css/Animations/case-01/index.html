@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case - 01</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: auto;
+        }
+
+        section>div{
+            width: 200px;
+            height: 125px;
+            position: relative;
+            background-color: #31c1bd;
+            border-radius: 15px;
+            animation-name: my-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes my-animation {
+            0% {
+                background: yellow;
+                margin: 0px 0px 0px 0px;
+                transform: rotate(0deg);
+            }
+            25% {
+                background: blue;
+                margin: 0px 0px 0px 1150px;
+                transform: rotate(360deg);
+            }
+            50% {
+                background: orangered;
+                margin: 450px 0px 0px 1100px;
+                transform: rotate(0deg);
+            }
+            75% {
+                background: red;
+                margin: 450px 1150px 0px 0px;
+                transform: rotate(360deg);
+            }
+            100% {
+                background: deeppink;
+                margin: 0px 0px 0px 0px;
+                transform: rotate(0deg);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>

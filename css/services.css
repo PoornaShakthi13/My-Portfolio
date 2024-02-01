@@ -1,0 +1,168 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 06/09/2022
+* @Project: My-Portfolio
+* */
+
+main>section:nth-child(2) {
+    left: 0;
+    top: 190vh;
+    position: absolute;
+    width: 99vw;
+    height: 500px;
+    margin: 0;
+    /*border: 1px solid red;*/
+
+}
+
+main>section:nth-child(2)>div:nth-child(1) {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(2)>div:nth-child(2) {
+    position: absolute;
+    left: 40px;
+    width: 10px;
+    height: 60px;
+    background-color: #f44336;
+}
+
+main>section:nth-child(2)>div:nth-child(3) {
+    width: 99vw;
+    height: 60px;
+    background: linear-gradient(rgba(97, 97, 97, 0.68),#232323);
+}
+
+main>section:nth-child(2)>div:nth-child(3)>p{
+    top: 0;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-left: 80px;
+}
+
+.services {
+    color: #ff5f20;
+    font-size: 55px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+    background-color: #212529;
+    transition: 0.5s;
+    transition-property: background-color,color,border,box-shadow;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:hover {
+    background-color: #012445;
+    border-top: 5px solid #f44336;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.89);
+    transition-property: box-shadow,background-color,border;
+    color: #f44336;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(1) {
+    top: 125px;
+    left: 40px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div>div:nth-child(1) {
+    position: absolute;
+    top: 25px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.18);
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+    transform: rotate(95rad);
+    background-position: center;
+}
+
+/*main>section:nth-child(2)>section:first-of-type>div>div:first-of-type>div {*/
+/*    width: fit-content;*/
+/*    height: fit-content;*/
+/*    transform: rotate(0rad);*/
+/*}*/
+
+main>section:nth-child(2)>section:first-of-type>div>div:first-of-type>div>i:first-of-type{
+    position: absolute;
+    margin: auto;
+    color: white;
+    font-size: 90px;
+    transform: rotate(-95rad);
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div>div:nth-child(2) {
+    font-family: 'Nunito', sans-serif;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: auto;
+}
+
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(3)>div:first-of-type>div>i:first-of-type {
+    position: absolute;
+    margin: auto;
+    color: white;
+    font-size: 80px;
+    transform: rotate(-95rad);
+    padding-top: 2vh;
+    padding-left: 1vw;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(2) {
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(3) {
+    top: 125px;
+    right: 40px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(4) {
+    top: 475px;
+    left: 40px;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(5) {
+    top: 475px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main>section:nth-child(2)>section:first-of-type>div:nth-child(6) {
+    top: 475px;
+    right: 40px;
+}
+
+.services02 {
+    display: none;
+}
+
+main>section:nth-child(2)>div:nth-child(6) {
+    display: none;
+}
